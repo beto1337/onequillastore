@@ -1,0 +1,40 @@
+<div class="registro" id="registro" onkeypress="return runScriptReg(event)" >
+  <div id="_AJAX_REG_">
+  </div>
+  <form name="prueba">
+<h3 class="aligncenter">registro</h3>
+  <div class="destinations-form">
+  <div class="input-line">
+    <label ><span class="glyphicon glyphicon-user"></span> Usuario </label>
+    <input type="text" class="form-inputlogin check-value" id="user_reg" placeholder="Introducir Usuario">
+  </div>
+
+  <div class="input-line">
+    <label ><span class="glyphicon glyphicon-user"></span> Email </label>
+    <input type="text" class="form-inputlogin check-value" id="email_reg" placeholder="Introducir Email">
+  </div>
+
+  <div class="input-line">
+    <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Contraseña</label>
+    <input type="password" class="form-inputlogin check-value" id="pass_reg" placeholder="Introducir Contraseña">
+  </div>
+  <div class="input-line">
+    <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>Repita su Contraseña</label>
+    <input type="password" class="form-inputlogin check-value" id="pass_reg_dos" placeholder="Introducir Contraseña">
+  </div>
+
+  <div class="checkbox">
+    <label><input type="checkbox" value="1" id="tyc" onclick="javascript:valida(this.checked)" >Acepto terminos y condiciones</label>
+  </div>
+<!-- placeholder para el codigo de cliente
+  <div class="input-line">
+    <input type="text" class="form-inputlogin check-value" id="nsocio" name="nsocio" placeholder="Introducir Codigo" disabled>
+  </div>
+  -->
+  </div>
+  <button type="button" class="btn btn-special" onclick="goReg()"><span class="glyphicon glyphicon-off"></span> Registrarse!</button>
+  <p>¿Ya tienes una cuenta? <a href="javascript:openLogin();" style="color:blue">Entra aqui!</a></p>
+</form>
+</div>
+
+<script src="views/app/js/reg.js"> </script>

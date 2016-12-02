@@ -1,0 +1,23 @@
+<div class="lostpass" id="lostpass"  >
+
+         <div id="_AJAX_LOSTPASS_"></div>
+         <div class="input-line">
+           <label ><span class="glyphicon glyphicon-user"></span> Recuperar contraseña </label>
+           </div>
+         <div class="modal-body">
+           <div role="form">
+             <div class="form-group" onkeypress="return runScriptLostpass(event)">
+               <label for="usrname"><span class="glyphicon glyphicon-enveloper"></span> Email</label>
+               <input type="email" class="form-control" id="email_lostpass" placeholder="email">
+             </div>
+             <button type="button" class="btn btn-default btn-success btn-block" onclick="goLostpass()"><span class="glyphicon glyphicon-off"></span> Recuperar</button>
+             <center>
+             <button  onclick="window.location.href='javascript:closeVentana();'" type="btn" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+             <p>Iniciar session<a href="javascript:openLogin();" style="color:blue"> aqui!</a></p>
+            </center>
+           </div>
+         </div>
+         </div>
+
+
+   <script src="views/app/js/lostpass.js"></script>
