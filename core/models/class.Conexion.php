@@ -7,7 +7,7 @@ class Conexion extends mysqli {
 
   public function __construct() {
     parent::__construct('localhost','root','beto1337','onequilla');
-    $this->connect_errno ? die('Error en la conexión a la base de datos') : null;
+    $this->connect_errno ? die(echo 'Error en la conexión a la base de datos') : null;
     $this->set_charset("utf8");
 }
 
