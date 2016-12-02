@@ -4,7 +4,7 @@ session_start();
 #Constantes de conexión
 define('DB_HOST','localhost');
 define('DB_USER','root');
-define('DB_PASS','1337');
+define('DB_PASS','beto1337');
 define('DB_NAME','onequilla');
 
 #Constantes de la APP
