@@ -1,5 +1,3 @@
-<!-- <meta charset="utf-8"/> -->
-
 
 <?php
 require '/core/core.php';
