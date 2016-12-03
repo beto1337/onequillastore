@@ -10,7 +10,7 @@ define('DB_NAME','onequilla');
 #Constantes de la APP
 define('HTML_DIR','html/');
 define('APP_TITTLE','One Quilla Store');
-define('APP_URL','http://localhost/oqs/');
+define('APP_URL','http://ec2-54-211-50-222.compute-1.amazonaws.com/onequillastore/');
 
 #Estructura
 require('vendor/autoload.php');
@@ -24,9 +24,9 @@ $users = Users();
 
 
 #Constantes de PHPMailer
-define('PHPMAILER_HOST','p3plcpnl0173.prod.phx3.secureserver.net');
-define('PHPMAILER_USER','public@ocrend.com');
-define('PHPMAILER_PASS','Prinick2016');
+define('PHPMAILER_HOST','smtp.gmail.com');
+define('PHPMAILER_USER','onequillastore@gmail.com');
+define('PHPMAILER_PASS','13374274');
 define('PHPMAILER_PORT',465);
 /*
 #Constantes básicas de personalización
