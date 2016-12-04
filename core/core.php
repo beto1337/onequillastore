@@ -10,7 +10,7 @@ define('DB_NAME','onequilla');
 #Constantes de la APP
 define('HTML_DIR','html/');
 define('APP_TITTLE','One Quilla Store');
-define('APP_URL','http://ec2-54-211-50-222.compute-1.amazonaws.com/onequillastore/');
+define('APP_URL','http://www.onequillastore.com');
 
 #Estructura
 require('vendor/autoload.php');
