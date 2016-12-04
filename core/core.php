@@ -24,9 +24,9 @@ $users = Users();
 
 
 #Constantes de PHPMailer
-define('PHPMAILER_HOST','smtp.gmail.com');
-define('PHPMAILER_USER','onequillastore@gmail.com');
-define('PHPMAILER_PASS','13374274');
+define('PHPMAILER_HOST','p3plcpnl0173.prod.phx3.secureserver.net');
+define('PHPMAILER_USER','public@ocrend.com');
+define('PHPMAILER_PASS','Prinick2016');
 define('PHPMAILER_PORT',465);
 /*
 #Constantes básicas de personalización

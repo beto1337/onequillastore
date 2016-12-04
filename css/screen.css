@@ -2825,10 +2825,9 @@ left: -240px;
 /* -------- Intro Section -------- */
 .hero-box {
   background-color:rgb(164, 182, 186);
-  background-size:cover;
-  background-position: center;
   background-attachment: fixed;
-  padding: 400px 0;
+  background-size:cover;
+  padding: 20% 0;
 }
 .hero-box .hero-text h1,
 .hero-box .hero-text p {

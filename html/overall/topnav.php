@@ -3,7 +3,7 @@
       <div class="header-content">
 
          <nav class="site-nav">
-           <a href="index.html">
+           <a href="index.php">
               <img src="img/logo.png" width="100" height="100" /> </a>
            <form class="destinations-form">
                <div class="input-line">
@@ -68,7 +68,7 @@
 </header>
 <div  id="ventana1" class="ventana1">
   <?php
-if (!$_SESSION['app_id']) {
+if (!(isset($_SESSION['app_id']))) {
   include 'html/public/login.html';
  include 'html/public/reg.html';
  include 'html/public/lostpass.html';

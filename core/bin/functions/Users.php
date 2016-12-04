@@ -11,7 +11,10 @@ function Users() {
         'pass' => $d['pass'],
         'email' => $d['email'],
         'permisos' => $d['permisos'],
-        'codigo_user' => $d['codigo_user']
+        'codigo_user' => $d['codigo_user'],
+        'activo' => $d['activo'],
+        'keyreg' => $d['keyreg']
+
 
       );
     }
