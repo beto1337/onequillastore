@@ -55,7 +55,7 @@ if($_POST) //si se ha presionado enviar
         $descripcion=$_POST['descripcion'];
         $marca=$_POST['marca'];
         $categoria=$_POST['categoria'];
-        $direccioncarpeta=APP_URL.'admin/producto/'.$nombre;
+        $direccioncarpeta='admin/producto/'.$nombre;
         $errors = '';
         $resultado = 0;
         $permitidos = array("image/png");
