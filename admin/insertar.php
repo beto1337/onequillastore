@@ -50,12 +50,13 @@
 if($_POST) //si se ha presionado enviar
 {
         $nombre=$_POST['nombre'];
+        $nombredireccion=str_replace(" ", "_", $nombre);
         $precio=$_POST['precio'];
         $cantidad=$_POST['cantidad'];
         $descripcion=$_POST['descripcion'];
         $marca=$_POST['marca'];
         $categoria=$_POST['categoria'];
-        $direccioncarpeta='admin/producto/'.$nombre;
+        $direccioncarpeta='admin/producto/'.$nombredireccion;
         $errors = '';
         $resultado = 0;
         $permitidos = array("image/png");
@@ -72,7 +73,6 @@ if($_POST) //si se ha presionado enviar
                   }
                   $nombrei=$_FILES["file"]["name"][$i];
                   $ruta_provisional=$_FILES["file"]["tmp_name"][$i];
-                  echo "$nombrei";
                   $src=$direccioncarpeta."/".$nombrei;
                   move_uploaded_file($ruta_provisional, $src);
                 }
