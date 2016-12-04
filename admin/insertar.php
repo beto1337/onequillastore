@@ -1,10 +1,6 @@
 <?php
 //include(HTML_DIR.'overall/header.php')
  ?>
- <html>
-    <head>
-        <title>Ejemplo del uso de tablas - aprenderaprogramar.com</title>
-    </head>
     <body>
        <form method="post" enctype="multipart/form-data">
         <table border="1px"> <!-- Lo cambiaremos por CSS -->
@@ -49,7 +45,7 @@
         <input type="submit"></td>
          </form>
     </body>
-</html>
+
 <?php
 if($_POST) //si se ha presionado enviar
 {
