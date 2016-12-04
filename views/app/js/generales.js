@@ -24,7 +24,3 @@ $("#lostpass").slideUp("speed");
 function valida(esto){
 document.forms['prueba'].nsocio.disabled=!esto;
 }
-
-function redireccionarIndex(){
-  window.locationf="http://localhost/onequillastore";
-}
