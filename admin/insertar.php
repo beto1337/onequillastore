@@ -39,7 +39,7 @@
           </tr>
           <tr>
               <td><label>Cargar imagenes</label></td>
-              <td> <input type="file" id="file" name="file[]" accept="image/png, image/gif, image/jpeg" multiple></td>
+              <td> <input type="file" id="file" name="file[]" accept="image/*" multiple></td>
           </tr>
         </table>
         <input type="submit"></td>
@@ -59,12 +59,10 @@ if($_POST) //si se ha presionado enviar
         $direccioncarpeta='admin/producto/'.$nombredireccion;
         $errors = '';
         $resultado = 0;
-        $permitidos = array("image/png");
-        $limite_kb = 2048;
+        $limite_kb = 100;
 
           if ( isset($_FILES["file"])) {
             for ($i=0; $i <count($_FILES["file"]["name"]) ; $i++) {
-              if (in_array($_FILES['file']['type'][$i], $permitidos)) {
                 if($_FILES['file']['size'][$i] <= $limite_kb * 1024) {
 
                   if(!(file_exists ($direccioncarpeta))){
@@ -78,17 +76,11 @@ if($_POST) //si se ha presionado enviar
                 }
                 else
                 {
-                $errors = "El archivo seleccionado no es permitido";
+                  $mo=$_FILES['file']['size'];
+                $errors = "El archivo seleccionado exede el peso permitido";
                 echo "$errors";
+                var_dump($mo);
                 }
-              }
-              else
-              {
-              $mo=$_FILES['file']['size'];
-              $errors = "El archivo seleccionado excede 1MB de peso ";
-              echo "$errors ";
-              var_dump($mo);
-              }
             }
             $db = new Conexion();
             $db->query("INSERT INTO productos (nombre,precio,cantidad,descripcion,marca,categoria,ruta) VALUES ('$nombre','$precio','$cantidad','$descripcion','$marca','$categoria','$direccioncarpeta'); ");
