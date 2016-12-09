@@ -59,7 +59,7 @@ if($_POST) //si se ha presionado enviar
         $direccioncarpeta='admin/producto/'.$nombredireccion;
         $errors = '';
         $resultado = 0;
-        $limite_kb = 100;
+        $limite_kb = 200;
 
           if ( isset($_FILES["file"])) {
             for ($i=0; $i <count($_FILES["file"]["name"]) ; $i++) {
