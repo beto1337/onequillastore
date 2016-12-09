@@ -1,5 +1,6 @@
 <?php
 require('core/core.php');
+
 if ((isset($_SESSION['app_id']))) {
 if ($users[$_SESSION['app_id']]['permisos']==2) {
   if(isset($_GET['view'])) {
@@ -17,5 +18,6 @@ if ($users[$_SESSION['app_id']]['permisos']==2) {
 else {
 echo header ("location:".APP_URL."");
 
+}
 
  ?>
