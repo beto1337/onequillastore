@@ -1,68 +1,63 @@
 <!-- Footer -->
-<footer class="main-footer">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-5">
-            <div class="widget widget_links">
-               <h5 class="widget-title">Top Locations</h5>
+<footer >
+   <div class="contenedor">
+
+         <div class="colf">
+               <h5 class="">Acerca de</h5>
                <ul>
-                  <li><a href="#">Lorem impsum dolor</a></li>
-                  <li><a href="#">Sit amet consectetur</a></li>
-                  <li><a href="#">Adipisicing elit</a></li>
-                  <li><a href="#">Eiusmod tempor</a></li>
-                  <li><a href="#">incididunt ut labore</a></li>
+                  <li><a href="#" target="_self">Nosotros</a></li>
+                  <li><a href="#" target="_self">formas de pago</a></li>
+                  <li><a href="#" target="_self">Metodos de envio</a></li>
+                  <li><a href="#" target="_self">Seguridad</a></li>
                </ul>
-            </div>
          </div>
 
-         <div class="col-md-5">
-            <div class="widget widget_links">
-               <h5 class="widget-title">Featured Boats</h5>
+            <div class="colf">
+               <h5 class="">Ayuda</h5>
                <ul>
-                  <li><a href="#">Lorem impsum dolor</a></li>
-                  <li><a href="#">Sit amet consectetur</a></li>
-                  <li><a href="#">Adipisicing elit</a></li>
-                  <li><a href="#">Eiusmod tempor</a></li>
+                  <li><a href="#" target="_self">Comprar</a></li>
+                  <li><a href="#" target="_self">Vender</a></li>
+                  <li><a href="#" target="_self">solucion de problemas</a></li>
+                  <li><a href="#" target="_self">Buscamos lo que necesitas</a></li>
                </ul>
             </div>
-         </div>
 
-         <div class="col-md-9">
-            <div class="widget widget_social">
-               <h5 class="widget-title">Subscribe to our newsletter</h5>
-               <form class="subscribe-form">
-                  <div class="input-line">
-                     <input type="text" name="subscribe-email" value="" placeholder="Your email address" />
+             <div class="colf sus">
+               <h5 class="">Suscribete Para saber de nuestras promociones</h5>
+               <form class="suscribe">
+                  <div class="input">
+                     <input type="text" name="subscribe-email" value="" placeholder="email" />
                   </div>
-                  <button type="button" name="subscribe-submit" class="btn btn-special no-icon">Subscribe</button>
+                  <button type="button" class="btn" name="subscribe-submit" class="">Suscribirse</button>
                </form>
 
-               <ul class="clean-list social-block">
+               <ul class="social">
                   <li>
-                     <a href="#"><i class="icon-facebook"></i></a>
+                     <a href="#" target="_self"><i class="icon-facebook icon"></i></a>
+                   </li>
+                   <li>
+                      <a href="#" target="_self"><i class="icon-twitter icon"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="icon-twitter"></i></a>
+                      <a href="#" target="_self"><i class="icon-gplus icon"></i></a>
                   </li>
                   <li>
-                     <a href="#"><i class="icon-google"></i></a>
+                      <a href="#" target="_self"><i class="icon-whatsapp icon"></i></a>
+                  </li>
+                  <li>
+                      <a href="#" target="_self"><i class="icon-instagram icon"></i></a>
                   </li>
                </ul>
             </div>
+
+             <div class="colf">
+               <h5 class="">Contactanos</h5>
+               <ul>
+                  <li><a href="#" target="_self">Chat por whatsapp</a></li>
+                  <li><a href="#" target="_self">telefonos</a></li>
+                  <li><a href="#" target="_self">Direccion </a></li>
+               </ul>
          </div>
 
-         <div class="col-md-5">
-            <div class="widget widget_links">
-               <h5 class="widget-title">Contact us</h5>
-               <ul>
-                  <li><a href="#">Lorem impsum dolor</a></li>
-                  <li><a href="#">Sit amet consectetur</a></li>
-                  <li><a href="#">Adipisicing elit</a></li>
-                  <li><a href="#">Eiusmod tempor</a></li>
-                  <li><a href="#">incididunt ut labore</a></li>
-               </ul>
-            </div>
-         </div>
-      </div>
    </div>
 </footer>
