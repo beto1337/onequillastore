@@ -1,7 +1,7 @@
 <header>
   <div class="contenedor">
     <div class="logo">
-    <a href="?view=index" target="_self"><img src="views/images/logo.png" width="50" height="50"  /></a>
+    <a href="?view=index" target="_self"><img src="views/images/logop.png" width="50" height="50"  /></a>
     </div>
     <div class="busqueda">
 <form class="buscar" method="post">
