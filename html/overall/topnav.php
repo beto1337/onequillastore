@@ -1,13 +1,11 @@
 <header>
   <div class="contenedor">
     <div class="logo">
-      <img src="images/logo.png" width="50" height="50"  />
+    <a href="?view=index" target="_self"><img src="views/images/logo.png" width="50" height="50"  /></a>
     </div>
     <div class="busqueda">
-<form class="buscar">
-
+<form class="buscar" method="post">
 <input type="text" class="inputtext" name="" value="" placeholder="que estas buscando ">
-
    <button class="btn-buscar" name=""><span class="icon-search"></span></button>
 </form>
 </div>
@@ -39,15 +37,14 @@
           <li><a href="#" target="_self">Contactanos</a> </li>
         </ul>
           </li>
-          <li>
+
           <?php
           if (!(isset($_SESSION['app_id']))) {
-            echo "<a href='javascript:openVentana();' id='sign' ><span class='icon-user'></span>Iniciar session</a>";
+            echo "<li><a href='javascript:openVentana();' id='sign' ><span class='icon-user'></span>Iniciar session</a></li>";
           }else {
-            echo "<a href='#' target='_self'>". strtolower($users[$_SESSION['app_id']]['user'])."</a><a href='?view=logout' id='sign_out' class='btn btn-outlined'><span class='icon-user'></span> Sign out</a>";
+            echo "<li><a href='?view=Profile' target='_self'>". strtolower($users[$_SESSION['app_id']]['user'])."</a></li><li><a href='?view=logout' target='_self' id='sign_out'><span class='icon-user'></span> Sign out</a></li>";
           }
            ?>
-       </li>
       </ul>
     </nav>
   </div>

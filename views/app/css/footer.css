@@ -7,7 +7,7 @@ display: flex;
 box-shadow: 20px 20px 20px 20px #000;
 -moz-box-shadow: 20px 20px 20px #000;
 -webkit-box-shadow: 20px 20px 20px #000;
-
+top:30px;
 }
 footer .contenedor{
   margin: 20px;
@@ -79,7 +79,7 @@ footer ul{
   padding: 0 30px !important;
   background: #FDDB12;
 }
-.suscribe .btn:hover{
+.suscribe .btn-s:hover{
 background: #777;
 }
 
@@ -90,19 +90,21 @@ display: flex;
 }
 
 .social .icon{
-  text-align: center;
   font-weight: 500;
   -webkit-transition: inherit;
-  transition: inherit;
   background: #717171;
-  line-height: 44px;
-  font-size: 20px;
+  font-size: 25px;
   color: #ffffff;
-  height: 30px;
-  width: 35px;
+  height: 45px;
+  width: 45px;
+  border-radius:50%;
+  padding: 5px;
+  margin: 5px;
+  position:relative;
+  text-align: center;
+  transition: inherit;
+  line-height: 35px;
   display: inline-block;
-  border-radius: 50%;
-  margin-right: 20px;
 }
 .social .icon-facebook:hover{
   background-color: #3b5998;

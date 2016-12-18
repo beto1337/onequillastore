@@ -1,30 +1,24 @@
 
-<form class="formulario" role="form" id="formularioLogin" onkeypress="return runScriptLogin(event)"  >
+<form class="formulario" id="formularioLogin" onkeypress="return runScriptLogin(event)"  >
   <div id="_AJAX_LOGIN_">
   </div>
-<div id="cerrarventana"  style="color:red "><a href="javascript:closeVentana();"> Cerrar X</a></div>
+<div id="cerrarventana"><a href="javascript:closeVentana();"> Cerrar X</a></div>
 
-  <h3 class="aligncenter">Iniciar sesion</h3>
-  <hr>
-  <div class="destinations-form">
-  <div class="input-line">
-    <label ><span class="glyphicon glyphicon-user"></span> Usuario o Email</label>
-    <input type="text" class="form-inputlogin check-value" id="user_login" placeholder="Introducir Email">
-  </div>
-</div>
-<div class="destinations-form">
-<div class="input-line">
-    <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Contraseña</label>
-    <input type="password" class="form-inputlogin check-value" id="pass_login" placeholder="Introducir Contraseña">
-  </div>
-</div>
+  <h3>Iniciar sesion</h3>
+<hr>
 <center>
+    <label ><span class="icon-user"></span> Usuario o Email</label>
+    <input type="text" class="inputtext"  id="user_login" placeholder="Introducir Email">
+    <label for="psw"><span class="icon-lock"></span> Contraseña</label>
+    <input type="password" class="inputtext" id="pass_login" placeholder="Introducir Contraseña">
   <div class="checkbox">
     <label><input type="checkbox" value="1" id="session_login" checked>Recordarme</label>
   </div>
-  <button type="button" class="btn btn-special" onclick="goLogin();" id="iniciar_sesion"><span class="glyphicon glyphicon-off"></span> Iniciar Sesión</button>
-  <p>¿No estás registrado? <a href="javascript:openRegistro();" style="color:blue">Registrate!</a><br>
-  Contraseña <a style="color:blue" href="javascript:openLostpass();">perdida?</a></p>
+  <button type="button" class="btng" onclick="goLogin();" id="iniciar_sesion"><span class="icon-handshake-o"></span> Iniciar Sesión</button>
+  <p>¿No estás registrado? <a href="javascript:openRegistro();">Registrate!</a></p>
+  <p>
+  Contraseña <a  href="javascript:openLostpass();">perdida?</a>
+  </p>
   </center>
 </form>
 

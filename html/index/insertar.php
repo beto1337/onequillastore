@@ -1,12 +1,13 @@
 <?php
-//include(HTML_DIR.'overall/header.php')
- ?>
-    <body>
-       <form method="post" enctype="multipart/form-data">
+include(HTML_DIR.'overall/header.php');
+ include(HTML_DIR.'overall/topnav.php'); ?>
+  <body>
+    <main>
+       <form method="post" class="formulario" enctype="multipart/form-data">
         <table border="1px"> <!-- Lo cambiaremos por CSS -->
            <tr>
               <td><label>nombre del producto:</label></td>
-              <td><input name ="nombre" id="nombre"></td>
+              <td><input type="text" name ="nombre" id="nombre"></td>
           </tr>
           <tr>
               <td><label>precio:</label></td>
@@ -22,7 +23,7 @@
           </tr>
           <tr>
               <td><label>marca:</label></td>
-              <td><input name ="marca" id="marca"></td>
+              <td><input type="text" name ="marca" id="marca"></td>
           </tr>
           <tr>
               <td><label>Categoria:</label></td>
@@ -44,6 +45,8 @@
         </table>
         <input type="submit"></td>
          </form>
+         </main>
+         <?php include(HTML_DIR.'overall/footer.php'); ?>
     </body>
 
 <?php
@@ -56,7 +59,7 @@ if($_POST) //si se ha presionado enviar
         $descripcion=$_POST['descripcion'];
         $marca=$_POST['marca'];
         $categoria=$_POST['categoria'];
-        $direccioncarpeta='admin/producto/'.$nombredireccion;
+        $direccioncarpeta='views/images/productos/'.$nombredireccion;
         $errors = '';
         $resultado = 0;
         $limite_kb = 200;

@@ -19,8 +19,8 @@ if(!empty($_POST['user']) and !empty($_POST['pass'])) {
   $db->liberar($sql);
   $db->close();
 } else {
-  echo '<div class="alert alert-dismissible alert-danger">
-  <button type="button" class="close" data-dismiss="alert">x</button>
+  echo '<div class="alert alert-danger alert-dismissable">
+  <button class="close" data-dismiss="alert" aria-label="close">close X</button>
   <strong>ERROR:</strong> Todos los datos deben estar llenos.
 </div>';
 }

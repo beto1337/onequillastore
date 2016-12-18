@@ -61,3 +61,7 @@
 
    </div>
 </footer>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="views/app/js/menu.js"></script>
+  <script type="text/javascript">
+  </script>
