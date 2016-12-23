@@ -8,8 +8,8 @@ function goLogin() {
   connect.onreadystatechange = function(){
     if(connect.readyState == 4 && connect.status == 200){
       if (connect.responseText == 1) {
-    result ='<div class="alert alert-dismissible alert-success ">';
-    result +='<a href="#" target="_self" class="close"  data-dismiss="alert" aria-label="close">x</a>';
+    result ='<div class="alert alert-success alert-dismissable fade in">';
+    result +='<a href="#" target="_self" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
     result += '<h4>CONECTADO!</h4>';
     result += '<strong><p> Estamos redireccionandote...</p></strong>';
     result +='</div>';
@@ -19,8 +19,8 @@ function goLogin() {
     __('_AJAX_LOGIN_').innerHTML = connect.responseText;
   }
   } else if (connect.readyState != 4) {
-  result ='<div class="alert alert-dismissible alert-warning">';
-  result +='<button type="button" class="close" data-dismiss="alert">x</button>';
+  result ='<div class="alert alert-warning alert-dismissable fade in">';
+  result +=' <a href="#" target="_self" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
   result += '<h4>procesando!</h4>';
   result += '<strong><p> Estamos intentando logearte...</p></strong>';
   result +='</div>';

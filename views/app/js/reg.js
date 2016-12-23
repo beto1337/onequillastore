@@ -14,8 +14,8 @@ if (tyc) {
       connect.onreadystatechange = function(){
         if(connect.readyState == 4 && connect.status == 200){
           if (connect.responseText == 1) {
-        result ='<div class="alert alert-dismissible alert-success">';
-        result +='<button type="button" class="close" data-dismiss="alert">x</button>';
+        result ='<div class="alert alert-success alert-dismissable fade in">';
+        result +='<a href="#" target="_self" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
         result += '<h4>REGISTRO COMPLETADO!</h4>';
         result += '<strong><p> Estamos redireccionandote...</p></strong>';
         result +='</div>';
@@ -25,8 +25,8 @@ if (tyc) {
         __('_AJAX_REG_').innerHTML = connect.responseText;
       }
       } else if (connect.readyState != 4) {
-      result ='<div class="alert alert-dismissible alert-warning">';
-      result +='<button type="button" class="close" data-dismiss="alert">x</button>';
+      result ='<div class="alert alert-warning alert-dismissable fade in">';
+      result +=' <a href="#" target="_self" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
       result += '<h4>procesando!</h4>';
       result += '<strong><p> Estamos procesando tus datos...</p></strong>';
       result +='</div>';
@@ -38,8 +38,8 @@ if (tyc) {
       connect.send(form);
 
     }else {
-        result ='<div class="alert alert-dismissible alert-danger">';
-        result +='<button type="button" class="close" data-dismiss="alert">x</button>';
+        result ='<div class="alert alert-danger alert-dismissable fade in">';
+        result +='<a href="#" target="_self" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
         result += '<h4>Error!</h4>';
         result += '<strong><p>Las contraseñas no coinciden</p></strong>';
         result +='</div>';
@@ -47,8 +47,8 @@ if (tyc) {
     }
 }else {
 
-    result ='<div class="alert alert-dismissible alert-danger">';
-    result +='<button type="button" class="close" data-dismiss="alert">x</button>';
+    result ='<div class="alert alert-danger alert-dismissable fade in">';
+    result +='<a href="#" target="_self" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
     result += '<h4>Error!</h4>';
     result += '<strong><p>Todos los campos deben estar llenos</p></strong>';
     result +='</div>';
@@ -56,9 +56,8 @@ if (tyc) {
 
 }
 }else {
-  result ='<div class="alert alert-dismissible alert-danger">';
-  result +='<button type="button" class="close" data-dismiss="alert">x</button>';
-  result += '<h4>Error!</h4>';
+  result ='<div class="alert alert-danger alert-dismissable fade in">';
+  result +='<a href="#" target="_self" class="close" data-dismiss="alert" aria-label="close">&times;</a>';  result += '<h4>Error!</h4>';
   result += '<strong><p>Los terminos y condiciones deben ser aceptados</p></strong>';
   result +='</div>';
   __('_AJAX_REG_').innerHTML = result;

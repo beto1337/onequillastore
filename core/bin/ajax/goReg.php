@@ -41,8 +41,8 @@ $mail->Body    =  EmailTemplate($user,$link);
 $mail->AltBody = 'Hola '.$user.' para activar tu cuenta accede al siguiente enlace '. $link;
 
 if(!$mail->send()) {
-    $HTML = '<div class="alert alert-dismissible alert-danger">
-    <button type="button" class="close" data-dismiss="alert">x</button>
+    $HTML = '<div class="alert alert-danger alert-dismissable fade in">
+<a href="#" target="_self" class="close" data-dismiss="alert" aria-label="close">&times;</a>
     <strong>ERROR:</strong>'.$mail->ErrorInfo.'</div>';
 } else {
   $db->query("INSERT INTO users (user,pass,email,codigo_user,keyreg) VALUES ('$user','$pass','$email','$cod1','$keyreg');");
@@ -55,13 +55,13 @@ $HTML= 1;
 }else {
   $usuario = $db->recorrer($sql)[0];
   if (strtolower($user) == strtolower($usuario)) {
-    $HTML = '<div class="alert alert-dismissible alert-danger">
-    <button type="button" class="close" data-dismiss="alert">x</button>
+    $HTML = '<div class="alert alert-danger alert-dismissable fade in">
+<a href="#" target="_self" class="close" data-dismiss="alert" aria-label="close">&times;</a>
     <strong>ERROR:</strong> El usuario ingresado ya existe.
   </div>';
   }else {
-    $HTML = '<div class="alert alert-dismissible alert-danger">
-    <button type="button" class="close" data-dismiss="alert">x</button>
+    $HTML = '<div class="alert alert-danger alert-dismissable fade in">
+<a href="#" target="_self" class="close" data-dismiss="alert" aria-label="close">&times;</a>
     <strong>ERROR:</strong> El email ingresado ya se encuentra registrado.
     </div>';
   }

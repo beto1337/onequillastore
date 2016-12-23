@@ -11,16 +11,16 @@ if(!empty($_POST['user']) and !empty($_POST['pass'])) {
     $_SESSION['time_online'] = time() - (60*6);
     echo 1;
   } else {
-    echo '<div class="alert alert-dismissible alert-danger">
-    <button type="button" class="close" data-dismiss="alert">x</button>
+    echo '<div class="alert alert-danger alert-dismissable fade in">
+<a href="#" target="_self" class="close" data-dismiss="alert" aria-label="close">&times;</a>
     <strong>ERROR:</strong> Las credenciales son incorrectas.
   </div>';
   }
   $db->liberar($sql);
   $db->close();
 } else {
-  echo '<div class="alert alert-danger alert-dismissable">
-  <button class="close" data-dismiss="alert" aria-label="close">close X</button>
+  echo '<div class="alert alert-danger alert-dismissable fade in">
+    <a href="#" target="_self" class="close" data-dismiss="alert" aria-label="close">&times;</a>
   <strong>ERROR:</strong> Todos los datos deben estar llenos.
 </div>';
 }
