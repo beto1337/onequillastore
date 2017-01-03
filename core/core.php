@@ -19,6 +19,8 @@ require('core/bin/functions/Encrypt.php');
 require('core/bin/functions/generadorcodigo.php');
 require('core/bin/functions/Users.php');
 require('core/bin/functions/EmailTemplate.php');
+require('core/bin/functions/LostpassTemplate.php');
+
 
 $users = Users();
 
@@ -38,7 +40,6 @@ define('MIN_CONTENT_TEMAS_LONGITUD',270);
 require('core/bin/functions/Users.php');
 require('core/bin/functions/Categorias.php');
 require('core/bin/functions/Foros.php');
-require('core/bin/functions/LostpassTemplate.php');
 require('core/bin/functions/UrlAmigable.php');
 require('core/bin/functions/BBcode.php');
 require('core/bin/functions/OnlineUsers.php');

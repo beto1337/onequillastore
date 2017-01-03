@@ -1,8 +1,5 @@
 <?php
-/*	$conexion = @mysql_connect('localhost','root','1337') or die('No se encontró el servidor' .mysql_error());
-	$db="onequilla";
-	mysql_select_db($db)or die('No se encontró la base de datos');
-*/
+
 class Conexion extends mysqli {
 
   public function __construct() {

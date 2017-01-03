@@ -3,7 +3,7 @@ include(HTML_DIR.'overall/header.php');
  include(HTML_DIR.'overall/topnav.php'); ?>
   <body>
     <main>
-       <form method="post" class="formulario" enctype="multipart/form-data">
+       <form  method="post"  class="formulario" enctype="multipart/form-data">
         <table border="1px"> <!-- Lo cambiaremos por CSS -->
            <tr>
               <td><label>nombre del producto:</label></td>
@@ -46,9 +46,6 @@ include(HTML_DIR.'overall/header.php');
         <input type="submit"></td>
          </form>
          </main>
-         <?php include(HTML_DIR.'overall/footer.php'); ?>
-    </body>
-
 <?php
 if($_POST) //si se ha presionado enviar
 {
@@ -80,7 +77,7 @@ if($_POST) //si se ha presionado enviar
                 else
                 {
                   $mo=$_FILES['file']['size'];
-                $errors = "El archivo seleccionado exede el peso permitido";
+                $errors = "<h1 style='color:red'>El archivo seleccionado exede el peso permitido</h1>";
                 echo "$errors";
                 var_dump($mo);
                 }
@@ -88,10 +85,12 @@ if($_POST) //si se ha presionado enviar
             $db = new Conexion();
             $db->query("INSERT INTO productos (nombre,precio,cantidad,descripcion,marca,categoria,ruta) VALUES ('$nombre','$precio','$cantidad','$descripcion','$marca','$categoria','$direccioncarpeta'); ");
             $db->close();
+            echo "<h3 style='color:blue'>se ha guardodo con exito</h1>";
           }
           else {
           $errors = "no ha seleccionado ningun archivo";
           echo "$errors";
             }
 }
-?>
+ include(HTML_DIR.'overall/footer.php'); ?>
+</body>

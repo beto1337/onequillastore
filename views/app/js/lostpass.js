@@ -21,7 +21,7 @@ function goLostpass() {
     result ='<div class="alert alert-dismissible alert-warning">';
     result +='<button type="button" class="close" data-dismiss="alert">x</button>';
     result += '<h4>procesando!</h4>';
-    result += '<strong><p> Estamos mandandote un correo </p></strong>';
+    result += '<strong><p> Estamos Procesando la informacion! </p></strong>';
     result +='</div>';
     __('_AJAX_LOSTPASS_').innerHTML = result;
   }

@@ -3,7 +3,6 @@
 <head>
    <title><?php echo APP_TITTLE  ?> </title>
    <meta charset="utf-8">
-   <base href=" <?php APP_URL ?>" target="_blank" />
    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
    <link rel="stylesheet" href="views/app/css/style.css" />
    <link rel="stylesheet" href="views/app/css/fontello.css" />
