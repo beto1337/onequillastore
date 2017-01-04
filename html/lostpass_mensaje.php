@@ -1,6 +1,7 @@
 <?php include(HTML_DIR.'overall/header.php');?>
-
+<body >
 <?php include(HTML_DIR.'overall/topnav.php');?>
+<main>
 <section class="engine"> <a rel="nofollow" href="#"> <?php echo APP_TITTLE;  ?></a> </section>
 
 <section>
@@ -10,4 +11,5 @@
 
   </div>
 </section>
+</main>
 <?php include(HTML_DIR.'overall/footer.php');?>
