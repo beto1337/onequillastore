@@ -2,7 +2,7 @@
 $db= new conexion();
 $email=$db->real_escape_string($_POST['email']);
 
-$sql = $db-> query("SELECT id,user,email FROM users WHERE email='$email' LIMIT 1;");
+$sql = $db-> query("SELECT id,user FROM users WHERE email='$email' LIMIT 1;");
 if($db->rows($sql) > 0 ){
 $data =$db->recorrer($sql);
 $id=$data[0];

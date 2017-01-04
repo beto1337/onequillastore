@@ -7,7 +7,7 @@ if (!isset($_SESSION['app_id']) and isset($_GET['key'])){
   $sql = $db->query("SELECT id,newpass FROM users WHERE keypass='$keypass' LIMIT 1;");
   $newpass="losqsea";
    if ($db->rows($sql)>0) {
- $data->recorrer($sql);
+ $data=$db->recorrer($sql);
  $id_user=$data[0];
  $newpass = Encrypt($data[1]);
  $password=$data[1];
