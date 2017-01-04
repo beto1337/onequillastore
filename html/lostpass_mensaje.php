@@ -13,3 +13,8 @@
 </section>
 </main>
 <?php include(HTML_DIR.'overall/footer.php');?>
+<script src="views/app/js/menu.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>
