@@ -1,0 +1,25 @@
+
+<form class="formulario" id="formularioLogin" onkeypress="return runScriptLogin(event)"  >
+  <div id="_AJAX_LOGIN_">
+  </div>
+<div id="cerrarventana"><a href="javascript:closeVentana();"> Cerrar X</a></div>
+
+  <h3>Iniciar sesion</h3>
+<hr>
+<center>
+    <label ><span class="icon-user"></span> Usuario o Email</label>
+    <input type="text" class="inputtext"  id="user_login" placeholder="Introducir Email">
+    <label for="psw"><span class="icon-lock"></span> Contraseña</label>
+    <input type="password" class="inputtext" id="pass_login" placeholder="Introducir Contraseña">
+  <div class="checkbox">
+    <label><input type="checkbox" value="1" id="session_login" checked>Recordarme</label>
+  </div>
+  <button type="button" class="btng" onclick="goLogin();" id="iniciar_sesion"><span class="icon-handshake-o"></span> Iniciar Sesión</button>
+  <p>¿No estás registrado? <a href="javascript:openRegistro();">Registrate!</a></p>
+  <p>
+  Contraseña <a  href="javascript:openLostpass();">perdida?</a>
+  </p>
+  </center>
+</form>
+
+<script src="views/app/js/login.js"> </script>

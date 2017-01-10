@@ -11,7 +11,7 @@ include(HTML_DIR.'overall/header.php')
   }elseif ($users[$_SESSION['app_id']]['permisos']==2) {
 
     echo "<div class='save'>";
-    echo "<a class='btnsave' href='?view=insertar'>guardar productos</a>";
+    echo "<a class='btnsave' href='?view=productos&mode=add'>guardar productos</a>";
     echo "</div>";
   }
   ?>

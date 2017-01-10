@@ -1,0 +1,26 @@
+<form class="formulario" id="registro" onkeypress="return runScriptReg(event)" >
+  <div id="_AJAX_REG_">
+  </div>
+  <div id="cerrarventana"><a href="javascript:closeVentana();"> Cerrar X</a></div>
+<h3>registro</h3>
+<hr>
+    <label ><span class="icon-user"></span> Usuario </label>
+    <input type="text" class="inputtext" id="user_reg" placeholder="Introducir Usuario">
+  <label ><span class="icon-user"></span> Email </label>
+    <input type="text" class="inputtext" id="email_reg" placeholder="Introducir Email">
+
+    <label for="psw"><span class="icon-lock"></span> Contraseña</label>
+    <input type="password" class="inputtext" id="pass_reg" placeholder="Introducir Contraseña">
+
+    <label for="psw"><span class="icon-eye-off"></span>Repita su Contraseña</label>
+    <input type="password" class="inputtext" id="pass_reg_dos" placeholder="Introducir Contraseña">
+
+  <div class="checkbox">
+    <label><input type="checkbox" value="1" id="tyc" onclick="javascript:valida(this.checked)" >Acepto terminos y condiciones</label>
+  </div>
+<center>
+  <button type="button" class="btng" onclick="goReg()"><span class="icon-user-plus"></span> Registrarse!</button>
+  <p>¿Ya tienes una cuenta? <a href="javascript:openLogin();">Entra aqui!</a></p>
+</form>
+</center>
+<script src="views/app/js/reg.js"> </script>

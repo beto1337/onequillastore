@@ -16,8 +16,21 @@ include(HTML_DIR.'overall/header.php')
   </div>
   </section>
 
-        <section id="productos">
-            <div class="contenedor">
+  <section id="productos">
+      <div class="contenedor">
+<?php
+$ruta="views/images/productos/CAROLINA_HERRERA_212_SEXY_MEN_100ML";
+if ($aux= opendir($ruta)){
+  while (($archivo = readdir($aux)) !== false)
+              {
+                  if ($archivo!="." && $archivo!="..")
+                  {
+                      $ruta_completa = $ruta . '/' . $archivo;
+                      break;
+                  }
+}}
+echo "<article><img src='".$ruta_completa."' alt=''><h4>samsung galaxy s7 edge</h4></article>";
+?>
     <article >
       <img src="views/images/1.jpg" alt="">
       <h4>samsung galaxy s7 edge</h4>
