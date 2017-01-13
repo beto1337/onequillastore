@@ -10,7 +10,7 @@ define('DB_NAME','lusso');
 #Constantes de la APP
 define('HTML_DIR','html/');
 define('APP_TITTLE','Lusso Car');
-define('APP_URL','http://www.onequillastore.com/');
+define('APP_URL','http://www.onequillastore.com/lusso/');
 
 #Estructura
 require('vendor/autoload.php');
