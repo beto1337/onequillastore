@@ -4,17 +4,18 @@ $db= new conexion();
 
 $nombre   =$_POST['nombrer'];
 $apellido =$_POST['apellidor'];
+$pass   =Encrypt($_POST['passr']);
 $telefono  =$_POST['telefonor'];
 $email  =$_POST['correor'];
-$pass   =Encrypt($_POST['passr']);
+
 $cod1   = generarCodigo(6);
-$sql3   =  $db -> query("SELECT codigo_user FROM users WHERE codigo_user='$cod1' LIMIT 1;");
-$cod2   = $db-> recorrer($sql3)[0];
-  $db-> liberar($sql3);
-$sql    = $db -> query("SELECT telefono FROM users WHERE (telefono='$telefono' OR email='$email')  LIMIT 1;");
+//$sql3   =  $db -> query("SELECT codigo_user FROM users WHERE codigo_user='$cod1' LIMIT 1;");
+//$cod2   = $db-> recorrer($sql3)[0];
+//  $db-> liberar($sql3);
+//$sql    = $db -> query("SELECT telefono FROM users WHERE (telefono='$telefono' OR email='$email')  LIMIT 1;");
 $response=array();
 $response['success']=false;
-  if ($db->rows($sql) == 0) {
+/*  if ($db->rows($sql) == 0) {
       while ($cod1 == $cod2) {
         $cod1 = generarCodigo(6);
         $sql3 =  $db -> query("SELECT codigo_user FROM users WHERE codigo_user='$cod1' LIMIT 1;");
@@ -48,10 +49,11 @@ $mail->AltBody = 'Hola '.$nombre.' para activar tu cuenta accede al siguiente en
 if(!$mail->send()) {
     $response['message']= $mail->ErrorInfo;
 } else {
-  $sql_2=$db->query("INSERT INTO users (nombre,apellido,pass,email,telefono,codigo_user,keyreg) VALUES ('$nombre','$apellido','$pass','$email','$telefono','$cod1','$keyreg');");
+*/
+  $sql_2=$db->query("INSERT INTO users (nombre,apellido,pass,email,telefono,codigo_user) VALUES ('$nombre','$apellido','$pass','$email','$telefono','$cod1');");
   $db-> liberar($sql_2);
 $response['success']=true;
-$response['message']='ha sido registrado satisfactoriamente, ahora solo queda revisar su correo y activar su cuenta';
+/*$response['message']='ha sido registrado satisfactoriamente, ahora solo queda revisar su correo y activar su cuenta';
 }
 
 }else {
@@ -64,8 +66,8 @@ $response['message']='ha sido registrado satisfactoriamente, ahora solo queda re
   }
 
 }
-
-$db-> liberar($sql);
+*/
+//$db-> liberar($sql);
 $db-> close();
 echo json_encode($response);
 ?>
