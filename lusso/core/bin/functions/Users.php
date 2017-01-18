@@ -7,7 +7,8 @@ function Users() {
     while($d = $db->recorrer($sql)) {
       $users[$d['id']] = array(
       'id' => $d['id'],
-        'user' => $d['user'],
+        'nombre' => $d['nombre'],
+        'apellido'=> $d['apellido'],
         'pass' => $d['pass'],
         'email' => $d['email'],
         'permisos' => $d['permisos'],

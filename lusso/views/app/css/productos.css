@@ -8,9 +8,13 @@
 
 }
 #productos img {
-  width: 100%;
-  max-width: 280px;
+  width: auto;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
 }
 #productos h3, h4{
   text-align: center;
+  max-width: 200px;
+
 }

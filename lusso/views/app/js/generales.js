@@ -1,6 +1,7 @@
 function __(id){
 return document.getElementById(id)
 }
+
 function openVentana(){
 $("#ventana1").slideDown("slow");
 $("#formularioLogin").slideDown("speed");
@@ -34,4 +35,10 @@ $("#lostpass").slideUp("speed");
 }
 function valida(esto){
 document.forms['prueba'].nsocio.disabled=!esto;
+}
+function DeleteItem(contenido,url) {
+  var action = window.confirm(contenido);
+  if (action) {
+      window.location = url;
+  }
 }

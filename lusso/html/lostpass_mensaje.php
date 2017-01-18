@@ -7,7 +7,7 @@
 <section>
   <div class="alert alert-dismissible alert-success">
     <strong>contraseña cambiada¡</strong> se ha generado una nueva constraseña <strong> <?php echo $password ?></strong>, prueba
-    <a href='javascript:openVentana();' >Iniciar session</a> con ella.
+    <a href='javascript:openVentana();' >Iniciar session</a> con ella y podras cambiarla una vez estes dentro.
 
   </div>
 </section>

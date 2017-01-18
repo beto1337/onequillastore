@@ -7,13 +7,13 @@ background-color: rgba(0,0,0,0.6);
 top: 0;
 left: 0;
 display:none;
-z-index: 22;
+z-index: 2200;
 justify-content: center;
 }
 .formulario{
     font-family: "Open Sans", sans-serif !important;
   background-color:rgb(87, 120, 112);
-  z-index: 42;
+  z-index: 4200;
   width: 40%;
   margin-top:5px;
   margin-left: 30%;

@@ -5,7 +5,7 @@ $pass   =Encrypt($_POST['pass']);
 $user   =$_POST['user'];
 $email  =$_POST['email'];
 $cod1   = generarCodigo(6);
-$sql3   =  $db -> query("SELECT codigo_user FROM users WHERE codigo_user='$cod1' LIMIT 1;");
+$sql3   =  $db -> query("SELECT user FROM users WHERE codigo_user='$cod1' LIMIT 1;");
 $cod2   = $db-> recorrer($sql3)[0];
   $db-> liberar($sql3);
 $sql    = $db -> query("SELECT user FROM users WHERE user='$user' or email='$email' LIMIT 1;");

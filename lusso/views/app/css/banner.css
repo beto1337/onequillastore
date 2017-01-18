@@ -1,8 +1,12 @@
 #banner {
-margin-top: -60px;
+margin-top: 0;
 position: relative;
+height: 450px;
 }
 #banner img {
+  height: auto;
+  position: relative;
+  top: -50px;
   width: 100%;
 }
 #banner .contenedor{
@@ -10,7 +14,7 @@ position: relative;
   top: 50%;
   left: 50%;
   transform: translateX(-50%)translateY(-50%);
-  color: #111;
+  color: #fff;
 
 }
 #banner a{
@@ -33,12 +37,19 @@ font-size: 18px;
   font-size: 13px;
 }
 
-@media (min-width:768px){
-#banner {
-  height: 80%;
+@media (max-width:768px){
+#banner{
+  top: -50px;
+  width: auto;
+  height: auto;
   overflow: hidden;
 }
 #banner img {
-  height: auto;
+
+height: 460px;
+width: auto;
 }
+
+#banner .Informacion{
+
 }

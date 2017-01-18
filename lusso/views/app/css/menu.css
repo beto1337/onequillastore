@@ -12,26 +12,29 @@ body{
 header{
   padding: 0px;
   margin: 0px;
-  height: 60px;
-background-color:black;
-z-index: 10;
+  height: 50px;
+background-color: transparent;
+z-index: 100;
+
 }
 .menu{
   z-index: 10;
 }
 header .contenedor {
-  height: 60px;
+  height: 50px;
   display: flex;
   justify-content:space-between;
   align-items: center;
-
+  background-color: inherit;
 }
 .logo{
   float: left;
   display: flex;
   align-items: center;
   margin: 5px;
+  padding: 5px;
   z-index: 100;
+
 }
 
 #btn-menu {
@@ -55,22 +58,26 @@ header label {
 .menu ul li .children{
   display: none;
     position: absolute;
+     ;
+
 }
 }
 .menu ul li {
 display: block;
   position: relative;
+   ;
 }
 .menu a {
   display: block;
   padding: 20px 25px;
   color: #fff;
   text-decoration: none;
+   ;
 }
 .menu a:hover{
 background: rgba(0,0,0,0.8);
 color:#e7434e ;
-
+ ;
 }
 .menu ul li:hover .children{
   display: block;
@@ -134,30 +141,41 @@ background: #777;
 }
   header label{
     display: block;
+    z-index: 100;
   }
   header label:hover{
       color :#e7434e;
+  }
+  ul .submenu{
+    height:auto;
+    max-height:350px;
+    width: 100%;
+    overflow:scroll;
   }
   .menu{
     background-color: rgba(0,0,0,0.8);
     position: fixed;
     height: calc(100% -20px) ;
-    top: 60px;
+    z-index: 20000;
+    top: 50px;
     right:  0;
     width: 80%;
     transform: translateX(-130%);
     transition: all 0.5s;
-
+     ;
   }
   .menu ul{
     flex-direction:column-reverse;
     z-index: 100;
+     ;
   }
   .menu ul li{
-  display: block;
-    border-bottom: 1px solid rgba(255,255,255,0.2); }
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+   }
   .menu ul li a{
-    display: block;
+    display:block;
+
   }
   .menu ul li:hover .children {
     display: none;
@@ -166,9 +184,11 @@ background: #777;
     width: 100%;
     position: relative;
     background-color: rgba(0,0,0,0.8);
+    overflow: scroll;
   }
   .menu ul li .children li a {
 		margin-left:20px;
+     ;
 	}
 
   .menu a span {

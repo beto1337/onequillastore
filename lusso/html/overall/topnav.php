@@ -1,8 +1,9 @@
 <header>
   <div class="contenedor">
     <div class="logo">
-    <a href="?view=index" target="_self"><img src="views/images/logop.png" width="50" height="50"  /></a>
+    <a href="?view=index" target="_self"><img src="views/images/logop.png" width="45px" height="45px"  /></a>
     </div>
+  
 
     <input type="checkbox" id="btn-menu" >
     <label for="btn-menu" class="icon-menu"></label>

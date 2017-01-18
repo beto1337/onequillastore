@@ -1,9 +1,14 @@
 #banner {
 margin-top: 0;
 position: relative;
+height: 450px;
 }
 #banner img {
+  height: 450px;
+  position: relative;
+  top: 0px;
   width: 100%;
+  z-index: 0;
 }
 #banner .contenedor{
   position: absolute;
@@ -33,12 +38,19 @@ font-size: 18px;
   font-size: 13px;
 }
 
-@media (min-width:768px){
-#banner {
-  height: 300px;
+@media (max-width:768px){
+#banner{
+  top: 0px;
+  width: auto;
+  height: auto;
   overflow: hidden;
 }
 #banner img {
-  height: auto;
+z-index: 0;
+height: 460px;
+width: auto;
 }
+
+#banner .Informacion{
+
 }
